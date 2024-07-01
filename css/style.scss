@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: "Anton", sans-serif;
+}
+img {
+  max-width: 60%;
+  margin: 10% 0;
+}
+header {
+  background-color: darkgreen;
+  h1 {
+    padding: 3%;
+    text-align: center;
+    letter-spacing: 3px;
+    color: gold;
+    font-size: 50px;
+  }
+}
+#cards {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5% 0 10%;
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    background-color: lightgray;
+    border-radius: 20px;
+    h2 {
+      text-align: center;
+    }
+    .column {
+      display: flex;
+      flex-direction: column;
+      h2 {
+        padding: 5% 0;
+      }
+      label {
+        margin-bottom: 5%;
+      }
+    }
+  }
+}

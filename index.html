@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 24</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header><h1>ВКУСНО И ЗАПЯТАЯ</h1></header>
+    <main>
+      <div id="cards">
+        <div class="card">
+          <img src="./img/hamburger.jpg" alt="img" />
+          <h2>Выберите размер гамбургера:</h2>
+          <label>
+            Маленький (50 тугриков, 20 калорий)
+            <input type="radio" name="size" id="size_small" value="small" />
+          </label>
+          <label>
+            Большой (100 тугриков, 40 калорий)
+            <input type="radio" name="size" id="size_big" value="big" />
+          </label>
+          <div class="ingredients">
+            <hr />
+            <h2>Начинки</h2>
+            <div class="column">
+              <label>
+                Сыр (10 тугриков, 20 калорий)
+                <input type="checkbox" id="stuffing_cheese" />
+              </label>
+              <label>
+                Салат (20 тугриков, 5 калорий)
+                <input type="checkbox" id="stuffing_salad" />
+              </label>
+              <label>
+                Картошка (15 тугриков, 10 калорий)
+                <input type="checkbox" id="stuffing_potato" />
+              </label>
+            </div>
+            <h2>Добавки</h2>
+            <div class="column">
+              <label>
+                Приправа (15 тугриков, 0 калорий)
+                <input type="checkbox" id="topping_seasoning" />
+              </label>
+              <label>
+                Майонез (20 тугриков, 5 калорий)
+                <input type="checkbox" id="topping_mayo" />
+              </label>
+              <div>Общая сумма: <span id="total_price">0</span> тугриков</div>
+              <div>Калории: <span id="total_calories">0</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
